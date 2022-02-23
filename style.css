@@ -1,0 +1,160 @@
+:root {
+  --blue: #576ca8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, sans-serif;
+}
+
+body {
+  background-color: #302b27;
+  color: #fff;
+}
+
+input {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #444b67;
+  padding: 0.5rem;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  padding: 0.25rem 0.5rem;
+  justify-content: space-between;
+}
+
+header div {
+  align-items: center;
+}
+
+header div.df {
+  gap: 0;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+  margin: 0 0.5rem;
+}
+
+header i {
+  margin: 0.25rem;
+}
+
+main {
+  height: 70vh;
+  overflow: scroll;
+  margin-top: 10vh;
+  padding: 0.5rem;
+}
+
+section {
+  border-left: 0.5rem solid;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  margin: 1rem 0 2.5rem 0;
+  font-size: 0.75rem;
+}
+section:nth-child(1),
+section:nth-child(4) {
+  border-left-color: #c94277;
+}
+section:nth-child(2),
+section:nth-child(5) {
+  border-left-color: #1b998b;
+}
+section:nth-child(3),
+section:nth-child(6) {
+  border-left-color: #ffd046;
+}
+
+section p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+section ul {
+  justify-content: space-between;
+}
+section li.df {
+  gap: 0.5rem;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 20vh;
+}
+
+footer form {
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+footer input {
+  background-color: var(--blue);
+  color: #fff;
+}
+footer input[type='text'] {
+  width: 60vw;
+}
+footer input[type='date'] {
+  width: 20vw;
+}
+footer input::placeholder {
+  color: #fff8;
+}
+
+footer button {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: var(--blue);
+}
+
+footer form.df {
+  gap: 0.25rem;
+}
+
+footer nav ul {
+  background-color: var(--blue);
+  width: 100vw;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+footer nav li {
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+}
+footer nav i {
+  font-size: 3rem;
+}
+.active {
+  border-bottom: 0.25rem solid #fff;
+}
+
+.df {
+  display: flex;
+  gap: 1rem;
+}
